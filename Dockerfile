@@ -11,7 +11,7 @@ ADD . /go/src/github.com/galahat88/go-sample-app
 RUN go install github.com/galahat88/go-sample-app
 
 # Run the outyet command by default when the container starts.
-ENTRYPOINT /go/bin/hello
+ENTRYPOINT /go/bin/go-sample-app
 
 # Document that the service listens on port 8080.
 EXPOSE 1234
